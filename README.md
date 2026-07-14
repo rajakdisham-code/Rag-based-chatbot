@@ -1,4 +1,4 @@
-# 🤖 PDF RAG Chatbot
+# PDF RAG Chatbot
 
 A production-ready **Retrieval-Augmented Generation (RAG)** chatbot that allows users to ask questions from a collection of PDF documents using **Google Gemini**, **FAISS**, and **Sentence Transformers**.
 
@@ -6,21 +6,21 @@ The chatbot extracts text from PDFs, converts it into semantic embeddings, store
 
 ---
 
-## ✨ Features
+##  Features
 
-- 📄 Chat with multiple PDF documents
-- 🔍 Semantic search using FAISS
-- 🧠 Sentence Transformer embeddings (BGE)
-- 🤖 Google Gemini for answer generation
-- ⚡ Fast local vector database
-- 💬 Streamlit-based chat interface
-- 🔄 Easy document ingestion
-- 📁 Modular project structure
-- 🚀 Ready for Streamlit Community Cloud deployment
+-  Chat with multiple PDF documents
+-  Semantic search using FAISS
+-  Sentence Transformer embeddings (BGE)
+-  Google Gemini for answer generation
+-  Fast local vector database
+-  Streamlit-based chat interface
+-  Easy document ingestion
+-  Modular project structure
+-  Ready for Streamlit Community Cloud deployment
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
                  PDF Documents
@@ -54,7 +54,7 @@ The chatbot extracts text from PDFs, converts it into semantic embeddings, store
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 CHATBOTMAKING/
@@ -90,7 +90,7 @@ CHATBOTMAKING/
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 | Technology | Purpose |
 |------------|---------|
@@ -104,7 +104,7 @@ CHATBOTMAKING/
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Clone Repository
 
@@ -180,7 +180,7 @@ streamlit run app.py
 
 ---
 
-## 💡 Example Questions
+##  Example Questions
 
 - What is Object-Oriented Programming?
 - Explain Inheritance.
@@ -191,7 +191,7 @@ streamlit run app.py
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
 1. PDFs are loaded from the `data/` folder.
 2. Text is extracted page by page.
@@ -205,7 +205,7 @@ streamlit run app.py
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Home Page
 
@@ -219,7 +219,7 @@ streamlit run app.py
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - Incremental indexing
 - Hybrid Search (BM25 + FAISS)
@@ -234,7 +234,7 @@ streamlit run app.py
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions, feature requests, and suggestions are welcome.
 
@@ -242,15 +242,15 @@ Feel free to fork the repository and open a Pull Request.
 
 ---
 
-## 📜 License
+##  License
 
 This project is licensed under the MIT License.
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
-**Hitesh Rajak**
+**Disham Rajak**
 
 B.Tech, IIT Bombay
 
