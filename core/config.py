@@ -48,7 +48,7 @@ GENERATION_MODEL = os.getenv(
     "gemini-3.5-flash"
 )
 
-EMBEDDING_MODEL = "BAAI/bge-base-en-v1.5"
+EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"
 
 # ------------------------------------------------------------
 # Directory Configuration
