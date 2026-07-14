@@ -25,13 +25,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # API Configuration
 # ------------------------------------------------------------
 
+# First try local .env
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
+# If not found, try Streamlit Secrets
 if not GEMINI_API_KEY:
-    raise ValueError(
-        "❌ GEMINI_API_KEY not found.\n"
-        "Please create a .env file and add your API key."
-    )
+    try:
+        import streamlit as st
+        GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+    except Exception:
+        raise ValueError(
+            "❌ GEMINI_API_KEY not found.\n"
+            "Please add it to your .env file or Streamlit Secrets."
+        )
 
 # ------------------------------------------------------------
 # Model Configuration
@@ -75,7 +81,6 @@ SIMILARITY_THRESHOLD = float(
 # ------------------------------------------------------------
 
 CHUNK_SIZE = 1000
-
 CHUNK_OVERLAP = 200
 
 # ------------------------------------------------------------
@@ -89,15 +94,12 @@ EMBEDDING_BATCH_SIZE = 32
 # ------------------------------------------------------------
 
 PAGE_TITLE = "📄 PDF RAG Chatbot"
-
 PAGE_ICON = "🤖"
 
 # ------------------------------------------------------------
-# Create Required Folders Automatically
+# Create Required Directories
 # ------------------------------------------------------------
 
 DATA_FOLDER.mkdir(exist_ok=True)
-
 VECTOR_STORE.mkdir(exist_ok=True)
-
 LOG_FOLDER.mkdir(exist_ok=True)
